@@ -1,0 +1,16 @@
+<h1>Listing posts</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @posts %>
+  </tbody>
+</table>
+<br>
+<%= button_to 'New Post', new_post_path, method: "get"%>
